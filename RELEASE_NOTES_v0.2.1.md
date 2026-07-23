@@ -1,27 +1,27 @@
 # CappAckiMiner v0.2.1
 
-İlk kararlı v0.2.1 sürümü.
+The first stable v0.2.1 release.
 
-## Öne çıkanlar
+## Highlights
 
-- Main ve Lite görünümlerinin çalışma motorları ayrıldı; aynı anda yalnızca aktif görünüm çalışır.
-- Çoklu cüzdan başlatma, bekleme, yeniden deneme ve kurtarma akışları iyileştirildi.
-- Ağ sonucu kesinleşmeden oturumların yanlış sonuçlandırılması engellendi.
-- Kabul ve red sayaçları ile sonuç animasyonları düzeltildi.
-- Cüzdan bakiyesi ve son ödül gösterimleri yenilendi.
-- Bakiyeye göre sıralama eklendi ve varsayılan olarak etkinleştirildi.
-- CPU, sıcaklık, TPS ve ağ stresi göstergeleri eklendi.
-- Main ve Lite arayüzleri çoklu cüzdan kullanımı için yeniden düzenlendi.
-- Türkçe, İngilizce, Rusça, Arapça, Basitleştirilmiş Çince ve Endonezce çevirileri tamamlandı.
-- QR bağlantısı, cüzdan geri yükleme ve şifreli transfer akışları iyileştirildi.
-- Ayrıntılı kullanıcı yardım dosyası yenilendi.
+- Main and Lite now use separate runtime engines; only the active view operates at a time.
+- Multi-wallet startup, waiting, retry, and recovery flows were improved.
+- Sessions no longer receive a premature result before the network response is definitive.
+- Accepted and rejected counters and their result animations were corrected.
+- Wallet balance and recent reward displays were redesigned.
+- Balance sorting was added and is enabled by default.
+- CPU, temperature, TPS, and network stress indicators were added.
+- Main and Lite interfaces were reorganized for multi-wallet use.
+- Turkish, English, Russian, Arabic, Simplified Chinese, and Indonesian translations were completed.
+- QR connection, wallet restoration, and encrypted transfer flows were improved.
+- The detailed user help file was rewritten.
 
-## İndirme
+## Download
 
-Windows için `CappAckiMiner_0.2.1_x64-setup.exe` dosyasını indirin ve çalıştırın.
+Download and run `CappAckiMiner_0.2.1_x64-setup.exe` for Windows.
 
-Portable paket yayınlanmamaktadır.
+A portable package is not published.
 
-## Güvenlik
+## Security
 
-Kurulum dosyasını yalnızca resmi CappAckiMiner GitHub Releases sayfasından indirin. QR içeriğini, cüzdan özel anahtarlarını, yedek parolasını veya tam lisans anahtarını paylaşmayın.
+Download the installer only from the official CappAckiMiner GitHub Releases page. Never share QR contents, wallet private keys, backup passwords, or complete license keys.

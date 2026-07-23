@@ -23,7 +23,7 @@ Portable packages are not distributed. Use the official installer.
 
 ## Documentation
 
-See [HELP.md](HELP.md) for the detailed Turkish user guide.
+See [HELP.md](HELP.md) for the detailed English user guide.
 
 ## Security
 

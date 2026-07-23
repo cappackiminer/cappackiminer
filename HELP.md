@@ -1,349 +1,349 @@
-# CappAckiMiner Yardım ve Kullanım Kılavuzu
+# CappAckiMiner Help and User Guide
 
-Bu kılavuz CappAckiMiner’ın kurulumu, cüzdan bağlantısı, Main ve Lite görünümü, lisans yönetimi, yedekleme, ağ göstergeleri ve sorun giderme işlemlerini açıklar.
+This guide explains how to install CappAckiMiner, connect wallets, use the Main and Lite views, manage licenses and backups, understand network indicators, and troubleshoot common problems.
 
-## 1. CappAckiMiner nedir?
+## 1. What is CappAckiMiner?
 
-CappAckiMiner, birden fazla Acki Nacki cüzdanını aynı masaüstü uygulamasından yönetmek için geliştirilmiş bir Windows uygulamasıdır. Uygulama ile:
+CappAckiMiner is a Windows application for managing multiple Acki Nacki wallets from one desktop interface. You can:
 
-- Kayıtlı cüzdanları tek ekranda görebilirsiniz.
-- Cüzdan bakiyelerini ve son gelen ödülleri izleyebilirsiniz.
-- Cüzdanları ayrı ayrı veya toplu olarak başlatıp durdurabilirsiniz.
-- Main ve Lite görünümleri arasında geçiş yapabilirsiniz.
-- Lisans kapsamındaki cüzdanları seçebilirsiniz.
-- Cüzdan profillerini şifreli bir transfer dosyasıyla başka bilgisayara taşıyabilirsiniz.
-- Uygulama, bağlantı ve ağ olaylarını Log panelinden takip edebilirsiniz.
+- View registered wallets on one screen.
+- Monitor wallet balances and recent rewards.
+- Start or stop wallets individually or as a group.
+- Switch between Main and Lite views.
+- Select wallets covered by your license.
+- Move wallet profiles to another computer with an encrypted transfer file.
+- Review application, connection, and network events in the Log panel.
 
-CappAckiMiner bir cüzdan uygulaması değildir. Varlık gönderme, alma veya cüzdan bakiyesini harcama işlemleri AN Wallet üzerinden yapılır.
+CappAckiMiner is not a wallet application. Sending, receiving, and spending assets remain available through AN Wallet.
 
-## 2. Sistem gereksinimleri
+## 2. System requirements
 
-- 64 bit Windows 10 veya Windows 11
-- Çalışan bir internet bağlantısı
-- Güncel AN Wallet uygulaması
-- Acki Nacki hesabı
-- QR kodunu okutabilecek telefon veya uyumlu cihaz
-- Kullanılacak cüzdan sayısına uygun CappAckiMiner lisansı
+- 64-bit Windows 10 or Windows 11
+- A working internet connection
+- The latest AN Wallet application
+- An Acki Nacki account
+- A phone or compatible device that can scan QR codes
+- A CappAckiMiner license that supports the number of wallets you want to use
 
-İşlemci sıcaklığı yalnızca Windows ve donanım uygun bir sıcaklık kaynağı sağlıyorsa gösterilir. Sıcaklığın boş görünmesi tek başına uygulama hatası değildir.
+CPU temperature is shown only when Windows and the hardware provide a compatible temperature source. An empty temperature value does not necessarily indicate an application error.
 
-## 3. Kurulum
+## 3. Installation
 
-1. Yayınlanan CappAckiMiner kurulum dosyasını indirin.
-2. Kurulum dosyasını çalıştırın.
-3. Windows güvenlik uyarısı gösterirse dosyanın kaynağını ve yayınlanan sürümü kontrol edin.
-4. Kurulum adımlarını tamamlayın.
-5. CappAckiMiner’ı açın.
-6. İlk hazırlık tamamlanana ve kayıtlı cüzdanların durumu görünene kadar bekleyin.
+1. Download the official CappAckiMiner installer.
+2. Run the installer.
+3. If Windows displays a security warning, verify the download source and release version.
+4. Complete the installation steps.
+5. Open CappAckiMiner.
+6. Wait for initial preparation to finish and for registered wallet statuses to appear.
 
-Yeni bir sürüme geçmeden önce önemli cüzdan profilleri için şifreli yedek oluşturmanız önerilir.
+Before upgrading, create an encrypted backup of important wallet profiles.
 
-## 4. İlk açılış
+## 4. First launch
 
-Uygulama açıldığında:
+When the application opens:
 
-- Yerel ayarlar yüklenir.
-- Kayıtlı cüzdan profilleri geri getirilir.
-- Aktif görünümün motoru hazırlanır.
-- Lisans durumu kontrol edilir.
-- Bakiye, ödül ve ağ verileri sırayla yenilenir.
+- Local settings are loaded.
+- Registered wallet profiles are restored.
+- The engine for the active view is prepared.
+- License status is checked.
+- Balance, reward, and network data are refreshed in sequence.
 
-Çok sayıda cüzdan varsa ilk hazırlık birkaç dakika sürebilir. Bu sırada kartlarda `STARTING`, `WAITING` veya seçilen dildeki karşılıkları görülebilir.
+Initial preparation may take several minutes when many wallets are registered. During this time, wallet cards may display `STARTING`, `WAITING`, or their equivalent in the selected language.
 
-## 5. Main ve Lite görünümü
+## 5. Main and Lite views
 
 ### Main
 
-Main görünümü cüzdanları kart düzeninde gösterir. Her kartta cüzdan adı, durum, bakiye, son ödüller, sonuç sayaçları, ilerleme alanı ve cüzdan işlemleri bulunur.
+Main displays wallets as cards. Each card can show the wallet name, status, balance, recent rewards, result counters, progress, and wallet controls.
 
-Main görünümü ayrıntılı takip ve kart bazlı kullanım için uygundur.
+Main is best for detailed monitoring and card-based operation.
 
 ### Lite
 
-Lite görünümü daha yoğun bir tablo düzeni kullanır. Cüzdan adı, durum, bakiye, son ödül, sonuçlar ve işlemler daha az ekran alanında gösterilir. Arama ve durum filtresi Lite görünümünde kullanılabilir.
+Lite uses a denser table layout. Wallet names, statuses, balances, recent rewards, results, and controls occupy less screen space. Search and status filters are also available.
 
-Lite görünümü özellikle çok sayıda cüzdanı aynı ekranda izlemek için uygundur.
+Lite is best for monitoring many wallets on one screen.
 
-### Görünüm değiştirirken
+### Switching views
 
-Main ve Lite birbirinden ayrı çalışma motorlarına sahiptir. Görünüm değiştirildiğinde eski görünümün motoru durdurulur ve seçilen görünüm hazırlanır. Aynı anda yalnızca aktif görünümün motoru çalışır. İki görünüm de aynı kayıtlı cüzdanları ve aynı lisans bilgisini kullanır.
+Main and Lite use separate runtime engines. When you switch views, the previous engine stops and the selected view is prepared. Only the active view's engine can run at a time. Both views use the same registered wallets and license information.
 
-Geçiş sırasında üst düğmede `SWITCHING` görünebilir. Hazırlık tamamlanmadan tekrar görünüm değiştirmeyin veya uygulamayı kapatmayın.
+The view button may display `SWITCHING` during the transition. Wait for preparation to finish before switching again or closing the application.
 
-## 6. Üst göstergeler
+## 6. Header indicators
 
 ### CPU
 
-Bilgisayarın anlık işlemci kullanımını gösterir. Çok sayıda cüzdanın hazırlanması veya veri yenileme sırasında kısa süreli yükseliş normal olabilir.
+Shows current processor usage. Brief increases can be normal while many wallets are being prepared or data is being refreshed.
 
 ### TEMP
 
-İşlemci sıcaklığını gösterir. Değer yükselirse:
+Shows CPU temperature. If the value becomes high:
 
-- Bilgisayarın hava kanallarını kontrol edin.
-- Güç planını gözden geçirin.
-- Animasyonları kapatın.
-- Gerekmeyen diğer uygulamaları kapatın.
-- Daha az cüzdanla çalışmayı deneyin.
+- Check the computer's ventilation.
+- Review the Windows power plan.
+- Disable interface animations.
+- Close unnecessary applications.
+- Try operating fewer wallets.
 
 ### TPS
 
-Acki Nacki ağından alınabilen güncel işlem yoğunluğu bilgisidir. Bu değer uygulamanın yerel hızını değil, ağın genel durumunu gösterir.
+Shows current transaction activity reported by the Acki Nacki network. It represents general network conditions, not the local speed of the application.
 
 ### STRESS
 
-Son ağ istekleri ve bağlantı hataları kullanılarak hesaplanan ağ stresi göstergesidir:
+Estimates network stress from recent requests, response delays, and connection errors:
 
-- `LOW`: Yakın zamanda belirgin bir ağ sorunu görülmedi.
-- `MEDIUM`: Geçici gecikmeler veya başarısız istekler var.
-- `HIGH`: Ağ cevaplarında yoğun hata veya gecikme görülüyor.
-- `UNKNOWN`: Sağlıklı bir değerlendirme için yeterli canlı veri yok.
+- `LOW`: No significant recent network problem was detected.
+- `MEDIUM`: Temporary delays or unsuccessful requests were detected.
+- `HIGH`: Network responses show frequent errors or heavy delays.
+- `UNKNOWN`: There is not enough live data for a reliable estimate.
 
-STRESS göstergesi bir tahmindir. Tek başına ödül veya işlem sonucunu garanti etmez.
+STRESS is an estimate and does not guarantee any reward or transaction result.
 
-### Toplam ve günlük NACKL
+### Total and daily NACKL
 
-Toplam NACKL, uygulamadaki cüzdanların erişilebilen bakiyelerinin toplamıdır. Günlük veya 24 saatlik değer, erişilebilen canlı ödül verilerinden hesaplanır. Ağ verisi gecikirse bu alanlar da geç yenilenebilir.
+Total NACKL is the sum of accessible balances for wallets registered in the application. The daily or 24-hour value is calculated from available live reward data. These values may update late when the network data source is delayed.
 
-## 7. Cüzdan ekleme
+## 7. Adding a wallet
 
-1. `ADD WALLET / CÜZDAN EKLE` düğmesine basın.
-2. AN Wallet hesap adını doğru biçimde yazın.
-3. QR oluşturma düğmesine basın.
-4. Ekrandaki QR kodunu AN Wallet ile okutun.
-5. Telefonda görünen bağlantı ve yetkilendirme isteğini onaylayın.
-6. Uygulamanın cüzdanı tanımasını ve kartı oluşturmasını bekleyin.
+1. Select `ADD WALLET`.
+2. Enter the AN Wallet account name exactly.
+3. Select the button that generates the QR code.
+4. Scan the QR code with AN Wallet.
+5. Approve the connection and authorization request on the phone.
+6. Wait for CappAckiMiner to recognize the wallet and create its card.
 
-Onaydan sonra kartın görünmesi ağ yoğunluğuna göre biraz sürebilir. Aynı cüzdanı art arda tekrar eklemeye çalışmayın.
+The card may take some time to appear after approval, depending on network conditions. Do not repeatedly add the same wallet.
 
-### QR ekranı açık kalırsa
+### If the QR window remains open
 
-- Telefonda onayın tamamlandığını kontrol edin.
-- Doğru AN Wallet hesabını kullandığınızdan emin olun.
-- Bilgisayar ve telefon internet bağlantısını kontrol edin.
-- Birkaç dakika bekleyin.
-- İşlem sonuçlanmazsa pencereyi kapatıp cüzdanı yeniden bağlamayı deneyin.
+- Confirm that approval was completed on the phone.
+- Make sure you used the correct AN Wallet account.
+- Check the internet connection on both devices.
+- Wait a few minutes for network confirmation.
+- If the process does not finish, close the window and reconnect the wallet.
 
-## 8. Cüzdan kartı ve satırı
+## 8. Wallet cards and rows
 
-Bir cüzdan kartında veya Lite satırında şu bilgiler bulunabilir:
+A Main card or Lite row can include:
 
-- Cüzdan hesap adı
-- Güncel çalışma durumu
-- NACKL bakiyesi
-- Son gelen ödül veya ödüller
-- Kabul ve red sayaçları
-- Başlatma ve durdurma düğmeleri
-- QR ile yeniden bağlanma düğmesi
-- Yerel profili kaldırma düğmesi
+- Wallet account name
+- Current operating status
+- NACKL balance
+- Most recent reward or rewards
+- Accepted and rejected counters
+- Start and stop controls
+- QR reconnection control
+- Local profile removal control
 
-Ödül saati 24 saatlik biçimde gösterilir. Ödül alanı boşsa ağdan henüz yeni bir ödül bilgisi gelmemiş olabilir.
+Reward times use the 24-hour clock. An empty reward area can mean that no recent reward information is available from the network.
 
-## 9. Bakiye sıralaması
+## 9. Balance sorting
 
-`BALANCE / BAKİYE` düğmesi cüzdanları bakiyesi yüksek olandan düşük olana sıralar. Düğme etkin olduğunda yeni bakiye verileri geldikçe sıralama güncellenebilir.
+The `BALANCE` button sorts wallets from highest to lowest balance. While enabled, the order may change when new balance information arrives.
 
-Sıralamayı kapattığınızda cüzdanlar kayıtlı veya yerleştirilmiş düzenine döner. Bu düğmenin adı ve açıklaması seçilen uygulama diline göre değişir.
+When sorting is disabled, wallets return to their saved or placed order. The button label and description follow the selected application language.
 
-## 10. Cüzdan işlemleri
+## 10. Wallet controls
 
-### Tümünü başlat
+### Start All
 
-Lisans kapsamında seçilmiş ve bağlantısı hazır cüzdanları sırayla başlatır. Başlatma sırasında düğmeye tekrar tekrar basmayın.
+Starts eligible, selected, and connected wallets in sequence. Do not press the button repeatedly while startup is in progress.
 
-### Tümünü durdur
+### Stop All
 
-Aktif işlemleri ve sıraya alınmış toplu başlatmaları durdurur.
+Stops active operations and cancels queued group starts.
 
-### Tek cüzdanı başlat veya durdur
+### Start or stop one wallet
 
-Kart ya da satır üzerindeki yeşil düğme yalnızca ilgili cüzdanı başlatır. Kırmızı düğme yalnızca ilgili cüzdanı durdurur.
+The green control on a card or row starts only that wallet. The red control stops only that wallet.
 
-### Yeniden bağlan
+### Reconnect
 
-Dairesel ok düğmesi yeni bir QR bağlantı süreci açar. Aşağıdaki durumlarda kullanılabilir:
+The circular-arrow control opens a new QR connection process. Use it when:
 
-- Kartta `RESTORE FAILED` görünmesi
-- Cüzdanın bağlantı anahtarının geçersiz olması
-- Uygulamanın açıkça yeniden yetkilendirme istemesi
-- Cüzdanın uzun süre hazırlanamayarak bağlantı hatası vermesi
+- The wallet displays `RESTORE FAILED`.
+- Its saved connection key is invalid.
+- The application explicitly requests authorization again.
+- The wallet cannot be prepared and reports a persistent connection error.
 
-Hazır veya bekliyor durumundaki her cüzdanın yeniden QR ile bağlanması gerekmez.
+Wallets in `READY` or ordinary `WAITING` status do not automatically require a new QR authorization.
 
-### Cüzdanı kaldır
+### Remove wallet
 
-Silme düğmesi yalnızca CappAckiMiner içindeki yerel cüzdan profilini kaldırır. Blockchain hesabını, AN Wallet hesabını veya bakiyeyi silmez.
+The remove control deletes only the local CappAckiMiner profile. It does not delete the blockchain account, the AN Wallet account, or its balance.
 
-## 11. Durumların anlamı
+## 11. Status reference
 
-- `READY`: Cüzdan hazırlanmış ve başlatılabilir.
-- `STARTING`: Cüzdanın yerel hazırlığı sürüyor.
-- `RUNNING` veya `COMPUTING`: Cüzdan aktif çalışıyor.
-- `WAITING`: Ağdan veya SDK’dan sonraki kesin sonuç bekleniyor.
-- `RECOVERING`: Uygulama cüzdan bağlantısını güvenli şekilde yeniden hazırlıyor.
-- `STOPPED`: Cüzdan kullanıcı tarafından veya toplu durdurmayla durduruldu.
-- `FINISHED`: İlgili işlem tamamlandı.
-- `NETWORK REJECTED`: Ağ işlemi kabul etmedi.
-- `ERROR`: Bir bağlantı, SDK veya yerel işlem hatası oluştu.
-- `RECOVERY FAILED` veya `RESTORE FAILED`: Kayıtlı bağlantı bilgisiyle cüzdan yeniden hazırlanamadı.
+- `READY`: The wallet is prepared and can be started.
+- `STARTING`: Local wallet preparation is in progress.
+- `RUNNING` or `COMPUTING`: The wallet is actively operating.
+- `WAITING`: A definitive response is still expected from the network or SDK.
+- `RECOVERING`: The application is safely rebuilding the wallet connection.
+- `STOPPED`: The wallet was stopped by the user or by Stop All.
+- `FINISHED`: The current operation has completed.
+- `NETWORK REJECTED`: The network did not accept the operation.
+- `ERROR`: A connection, SDK, or local operation failed.
+- `RECOVERY FAILED` or `RESTORE FAILED`: The wallet could not be prepared from its saved connection information.
 
-`WAITING` her zaman hata anlamına gelmez. Ancak cüzdanlar uzun süre aynı durumda kalırsa STRESS göstergesini ve Log panelini kontrol edin.
+`WAITING` is not always an error. If many wallets remain in this status for an unusually long time, review the STRESS indicator and the Log panel.
 
-## 12. Lisans sistemi
+## 12. License system
 
-Lisans bilgileri Main ve Lite görünümünde ortaktır. Görünüm değiştirmek yeni bir lisans gerektirmez.
+Main and Lite share the same license information. Switching views does not require another license.
 
-Lisanslar:
+A license may:
 
-- Belirli bir cüzdan kapasitesine sahip olabilir.
-- Kullanım süresi sınırı içerebilir.
-- Belirli bir cihaza bağlanabilir.
-- Aynı anda kullanılabilecek cüzdanları sınırlandırabilir.
+- Support a defined wallet capacity.
+- Include an expiration period.
+- Be bound to a specific device.
+- Limit the wallets that can be active at the same time.
 
-### Lisans etkinleştirme
+### Activating a license
 
-1. `ADMIN` panelini açın.
-2. Lisans anahtarını ilgili alana yapıştırın.
-3. Etkinleştirme düğmesine basın.
-4. Lisans durum kartındaki kapasite ve süre bilgisini kontrol edin.
-5. Gerekirse çalışacak cüzdanları seçin.
+1. Open the `ADMIN` panel.
+2. Paste the license key into the appropriate field.
+3. Select the activation button.
+4. Check the capacity and expiration information on the license status card.
+5. Select the wallets that will operate if required.
 
-Lisans anahtarı cihaz koduyla eşleşmiyorsa etkinleştirme başarısız olabilir.
+Activation can fail when the license key does not match the device code.
 
-### Ücretsiz kullanım
+### Free use
 
-Ücretsiz veya bağış modeliyle sunulan kapasite uygulama içindeki lisans durumunda gösterilir. Güncel paket bilgisi için uygulamadaki lisans paketleri bölümünü kontrol edin.
+Any free or donation-supported capacity is shown in the in-app license status. Review the license packages inside the application for current availability.
 
-## 13. Cüzdan yedeği ve bilgisayarlar arası taşıma
+## 13. Wallet backup and transfer
 
-### Yedek oluşturma
+### Creating a backup
 
-1. `ADMIN` panelini açın.
-2. Cüzdan yedeği transfer aracını seçin.
-3. Güçlü ve unutmayacağınız bir parola belirleyin.
-4. Oluşturulan transfer dosyasını güvenli bir konumda saklayın.
+1. Open the `ADMIN` panel.
+2. Select the wallet backup transfer tool.
+3. Create a strong password that you can remember.
+4. Store the generated transfer file in a secure location.
 
-Yedek parolası uygulama tarafından geri getirilemez. Parolayı kaybederseniz şifreli yedek açılamaz.
+CappAckiMiner cannot recover the backup password. If you lose it, the encrypted backup cannot be opened.
 
-### Yedeği başka bilgisayara aktarma
+### Importing a backup on another computer
 
-1. Hedef bilgisayara CappAckiMiner’ı kurun.
-2. Transfer dosyasını hedef bilgisayarda çalıştırın.
-3. İstendiğinde yedek parolasını girin.
-4. Uygulamanın profilleri içe aktarmasını bekleyin.
-5. Kartların durumunu kontrol edin.
-6. Yeniden bağlantı isteyen cüzdanları QR ile onaylayın.
+1. Install CappAckiMiner on the destination computer.
+2. Open the transfer file there.
+3. Enter the backup password when prompted.
+4. Wait for the profiles to be imported.
+5. Review the wallet card statuses.
+6. Approve wallets by QR only when the application requests reconnection.
 
-Transfer dosyasını, parolayı veya cüzdan bağlantı verilerini herkese açık kanallarda paylaşmayın.
+Never share the transfer file, its password, or wallet connection data through public channels.
 
-## 14. Dil, tema ve görünüm ayarları
+## 14. Language, theme, and appearance
 
-Logo menüsünden aşağıdaki diller seçilebilir:
+The logo menu provides these interface languages:
 
-- Türkçe
+- Turkish
 - English
-- Русский
-- العربية
-- 简体中文
-- Bahasa Indonesia
+- Russian
+- Arabic
+- Simplified Chinese
+- Indonesian
 
-Dil seçimi kaydedilir ve uygulama yeniden açıldığında korunur. Arayüz şekli, tema ve animasyon ayarları da aynı menüden değiştirilebilir.
+Language selection is saved between launches. Interface shape, theme, and animation preferences can also be changed from the same menu.
 
-Animasyonları kapatmak görsel efektleri azaltır. Cüzdan bakiyeleri, lisans kontrolleri ve ağ verileri çalışmaya devam eder.
+Disabling animations reduces visual effects. Wallet balances, license checks, and network data continue to operate.
 
-## 15. Log paneli
+## 15. Log panel
 
-Log paneli uygulamanın bağlantı, cüzdan, SDK, kurtarma ve ağ olaylarını saat bilgisiyle gösterir.
+The Log panel displays timestamped application, wallet, SDK, recovery, and network events.
 
-Kullanılabilen işlemler:
+Available actions include:
 
-- Logu dosyaya kaydetme
-- Log klasörünü açma
-- Ekrandaki log kayıtlarını temizleme
+- Save the log to a file.
+- Open the log folder.
+- Clear the visible log entries.
 
-Logu temizlemek cüzdan profillerini veya bakiyeleri silmez.
+Clearing the log does not delete wallet profiles or balances.
 
-Sorun bildirirken mümkünse şu bilgileri birlikte gönderin:
+When reporting a problem, include:
 
-- Uygulama sürümü
-- Windows sürümü
-- Sorunun görüldüğü saat
-- Etkilenen cüzdanın adı
-- Kartta görünen durum
-- İlgili Log satırları
-- STRESS ve TPS göstergeleri
+- Application version
+- Windows version
+- Approximate time of the problem
+- Affected wallet name
+- Status shown on its card
+- Relevant log lines
+- STRESS and TPS values
 
-QR içeriğini, özel anahtarları, yedek parolasını veya tam lisans anahtarını paylaşmayın.
+Do not share QR contents, private keys, backup passwords, or complete license keys.
 
-## 16. Sık karşılaşılan sorunlar
+## 16. Troubleshooting
 
-### Cüzdanların çoğu WAITING durumunda
+### Most wallets remain in WAITING
 
-1. STRESS göstergesini kontrol edin.
-2. TPS değerinin güncellenip güncellenmediğine bakın.
-3. Log panelinde ağ veya SDK hatalarını kontrol edin.
-4. Birkaç dakika otomatik yeniden denemeyi bekleyin.
-5. Sorun bütün cüzdanlarda aynı anda başladıysa ağ kaynaklı olma ihtimali yüksektir.
-6. Uzun süre düzelmezse `STOP ALL` ile durdurup uygulamayı yeniden açın.
+1. Check the STRESS indicator.
+2. Confirm whether TPS is updating.
+3. Look for network or SDK errors in the Log panel.
+4. Allow a few minutes for automatic recovery.
+5. If every wallet changed at the same time, a network-wide issue is more likely.
+6. If the condition persists, use `STOP ALL`, close the application completely, and reopen it.
 
-Her cüzdanı aynı anda QR ile yeniden bağlamak ilk seçenek olmamalıdır.
+Reauthorizing every wallet by QR should not be the first response.
 
-### RESTORE FAILED görünüyor
+### RESTORE FAILED is displayed
 
-1. İlgili cüzdanın yeniden bağlan düğmesine basın.
-2. QR kodunu doğru AN Wallet hesabıyla okutun.
-3. Onayı tamamlayın.
-4. Kartın tekrar hazırlanmasını bekleyin.
+1. Select reconnect for the affected wallet.
+2. Scan the QR code with the correct AN Wallet account.
+3. Complete approval.
+4. Wait for the card to become ready again.
 
-Sorun yalnızca bir veya birkaç cüzdandaysa önce yalnızca o cüzdanları yeniden bağlayın.
+If only one or two wallets are affected, reconnect only those wallets first.
 
-### Cüzdan eklendi ancak kart geç geliyor
+### A wallet was approved but its card appears late
 
-Onay sonrası ağ doğrulaması zaman alabilir. İnternet bağlantısı çalışıyorsa en az birkaç dakika bekleyin. Aynı hesabı tekrar tekrar eklemeyin.
+Network verification after approval can take time. If both devices have a working connection, wait several minutes. Do not repeatedly add the same account.
 
-### Bakiye veya ödül güncellenmiyor
+### Balance or reward does not update
 
-- Ağ göstergelerini kontrol edin.
-- Log panelinde veri sorgusu hatası olup olmadığına bakın.
-- Cüzdan adının doğru olduğunu kontrol edin.
-- Bir sonraki otomatik veri yenilemesini bekleyin.
-- Gerekirse uygulamayı yeniden açın.
+- Check the network indicators.
+- Look for data-query errors in the Log panel.
+- Verify the wallet account name.
+- Wait for the next automatic refresh.
+- Reopen the application if the problem continues.
 
-### Start All etkin olmuyor
+### Start All is unavailable
 
-- Lisansın aktif olduğunu kontrol edin.
-- Lisans kapsamında cüzdan seçildiğini kontrol edin.
-- Görünüm geçişinin tamamlanmasını bekleyin.
-- Cüzdanların hazırlanmış olduğundan emin olun.
-- Açık bir QR onay penceresi varsa işlemi tamamlayın veya kapatın.
+- Confirm that the license is active.
+- Confirm that at least one wallet is selected under the license.
+- Wait for any view transition to finish.
+- Make sure the wallets have completed preparation.
+- Complete or close any open QR approval window.
 
-### CPU veya sıcaklık yüksek
+### CPU usage or temperature is high
 
-- Animasyonları kapatın.
-- Gereksiz uygulamaları kapatın.
-- Bilgisayarın soğutmasını kontrol edin.
-- Daha az cüzdanla karşılaştırma yapın.
-- Windows güç planını kontrol edin.
+- Disable animations.
+- Close unnecessary applications.
+- Check the computer's cooling and ventilation.
+- Compare operation with fewer wallets.
+- Review the Windows power plan.
 
-### Uygulama açılmıyor
+### The application does not open
 
-- Windows güvenlik bildirimlerini kontrol edin.
-- Kurulum dosyasının eksiksiz indiğinden emin olun.
-- Bilgisayarı yeniden başlatın.
-- Uygulamayı yeniden kurun.
-- Sorun devam ederse Log klasöründeki son dosyayı destek ekibine gönderin.
+- Check Windows security notifications.
+- Confirm that the installer downloaded completely.
+- Restart the computer.
+- Reinstall the application.
+- If the problem continues, send the latest file from the Log folder to support.
 
-## 17. Güvenlik
+## 17. Security
 
-- Cüzdan özel anahtarlarını paylaşmayın.
-- QR kodunun veya bağlantının ekran görüntüsünü herkese açık paylaşmayın.
-- Yedek parolasını transfer dosyasıyla aynı yerde saklamayın.
-- Lisans üretiminde kullanılan özel geliştirici dosyalarını dağıtmayın.
-- Yalnızca güvendiğiniz kurulum dosyalarını çalıştırın.
-- Cüzdan adını ve hassas bilgileri sorun raporlarında gerektiği kadar maskeleyin.
+- Never share wallet private keys.
+- Do not publicly share screenshots containing QR codes or connection links.
+- Store the backup password separately from its transfer file.
+- Do not distribute private developer files used to create licenses.
+- Run installers only from trusted official releases.
+- Mask wallet names and sensitive data when reporting a problem.
 
-## 18. Kapatma ve sistem tepsisi
+## 18. Closing the application and system tray
 
-Pencereyi sistem tepsisine gizlemek uygulamayı tamamen kapatmayabilir. Aktif çalışmayı sonlandırmak istiyorsanız önce `STOP ALL` düğmesini kullanın, ardından uygulamayı tamamen kapatın.
+Hiding the window in the system tray may not stop the application. To end active operation, use `STOP ALL` first and then fully exit the application.
 
-Uygulamayı güncellemeden, kaldırmadan veya bilgisayarı kapatmadan önce aktif cüzdanları durdurmanız önerilir.
+Stop active wallets before updating or uninstalling CappAckiMiner, or before shutting down the computer.
