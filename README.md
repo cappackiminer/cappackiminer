@@ -29,6 +29,4 @@ See [HELP.md](HELP.md) for the detailed English user guide.
 
 Never share wallet private keys, authorization QR contents, backup passwords or complete license keys. Download installers only from the official release page.
 
-## Version
 
-Current stable release: **v0.2.1**
